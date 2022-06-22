@@ -2,3 +2,15 @@
 
 Dotfiles are those who we use to configure our computers, which looks like .bashrc and .zshrc
 
+## NeoVim
+
+To install and configure NeoVIM it was needed the following:
+
+- Download [nvim.deb](https://github.com/neovim/neovim) from the releases and then `sudo apt install ./nvim-linux64.deb`
+- Installing the [minimal plugin](https://github.com/junegunn/vim-plug) handler for vim: `sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \\n       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'`
+- Install the fuzzy file finder, `sudo apt install fzf`
+- Install the clipboard provider for vim `sudo apt install xclip`
+- Need to have yarn installed.
+- run this link `sudo ln -s /usr/bin/nvim /usr/bin/vim`
+- set the config here: `~/.config/nvim/init.vim`
+- then you run `vim +PlugInstall` `vim +GoInstallBinaries`
