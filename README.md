@@ -2,6 +2,12 @@
 
 Dotfiles are those who we use to configure our computers, which looks like .bashrc and .zshrc
 
+## ZSH
+
+I'm using zsh due to prefference, I only needed to install it by:
+- `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+- `sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"`
+
 ## NeoVim
 
 To install and configure NeoVIM it was needed the following:
@@ -14,3 +20,8 @@ To install and configure NeoVIM it was needed the following:
 - run this link `sudo ln -s /usr/bin/nvim /usr/bin/vim`
 - set the config here: `~/.config/nvim/init.vim`
 - then you run `vim +PlugInstall` `vim +GoInstallBinaries`
+
+### other infos:
+
+- updating your go : https://github.com/udhos/update-golang
+- reset my mouse settings: https://github.com/paulrichards321/resetmsmice
